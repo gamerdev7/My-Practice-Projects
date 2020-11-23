@@ -1,38 +1,52 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Structure
 {
-    public struct Customer
+    class MyClass
     {
-        private int _id; // Field.
-        public string Name { get; set; } // Auto-Implemented property.
+        MyStruct MYSTRUCT;
 
-        public int Id // Property.
+        public MyStruct GetMYSTRUCT()
         {
-            get { return this._id; }
-            set { this._id = value; }
+            return MYSTRUCT;
         }
 
-        public Customer(int id, string name) // Constructor.
+        public void SetMYSTRUCT(MyStruct S)
         {
-            _id = 0;
-            this.Name = name;
-            this.Id = id; 
-
+            MYSTRUCT = S;
         }
 
-        public void DisplayDetails() // Method.
+        public void PrintMYSTRUCT()
         {
-            Console.WriteLine($"Id : {this.Id} Name : {this.Name}");
+            Console.WriteLine("---------------------------------------");
+            Console.WriteLine("Name : " + MYSTRUCT.NAME);
+            Console.WriteLine("FIVE : " + MYSTRUCT.INTEGER);
         }
+
+    }
+
+    struct MyStruct
+    {
+        public string NAME;
+        public int INTEGER;
     }
 
     class Program
     {
         static void Main(string[] args)
         {
-            Customer c1 = new Customer(1, "Rob");
-            c1.DisplayDetails();
+            MyClass myClass = new MyClass();
+
+
+            myClass.PrintMYSTRUCT();
+            myClass.SetMYSTRUCT(new MyStruct { NAME = "shubham", INTEGER = 7 });
+
+            // myClass.GetMYSTRUCT().NAME = "YO" -> This line will give error bcoz when we get a structure using property, indexer or a method we only get a copy of the value inside the structure
+            //                                   -> (i.e, when we use property, indexer or a method the return statement returns a copy. [That's what I guessed])
+            //                                   -> and we can't use that copy to change the members of original struct variable (i.e, MYSTRUCT.NAME)                                  
+            myClass.PrintMYSTRUCT();
+
         }
     }
 }
