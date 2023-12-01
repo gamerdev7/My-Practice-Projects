@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29709.97
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructor Chaining (Same Class)", "Constructor Chaining\Constructor Chaining (Same Class).csproj", "{B98C08B9-CF28-4D01-A9FF-D5BD6B19A140}"
 EndProject
@@ -201,7 +201,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client-Server", "Client-Ser
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EchoClient", "EchoClient\EchoClient.csproj", "{F593DD31-2EF4-4DEA-AF7D-D0D4E20B455A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multi-Threaded EchoServer", "Multi-Threaded EchoServer\Multi-Threaded EchoServer.csproj", "{5ADAA4C5-13C7-4AD0-B90E-A9D628E96F2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multi-Threaded EchoServer", "Multi-Threaded EchoServer\Multi-Threaded EchoServer.csproj", "{5ADAA4C5-13C7-4AD0-B90E-A9D628E96F2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization and Deserialization", "Serialization and Deserialization\Serialization and Deserialization.csproj", "{F4EC62F2-BD83-463A-8A90-7B613990AF76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -561,6 +563,10 @@ Global
 		{5ADAA4C5-13C7-4AD0-B90E-A9D628E96F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5ADAA4C5-13C7-4AD0-B90E-A9D628E96F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5ADAA4C5-13C7-4AD0-B90E-A9D628E96F2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4EC62F2-BD83-463A-8A90-7B613990AF76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4EC62F2-BD83-463A-8A90-7B613990AF76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4EC62F2-BD83-463A-8A90-7B613990AF76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4EC62F2-BD83-463A-8A90-7B613990AF76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -618,6 +624,7 @@ Global
 		{57E426A0-D186-4BC5-8FC7-9A3AF2CD415D} = {4452B7DD-941F-424E-82A3-5991EDECC764}
 		{F593DD31-2EF4-4DEA-AF7D-D0D4E20B455A} = {4452B7DD-941F-424E-82A3-5991EDECC764}
 		{5ADAA4C5-13C7-4AD0-B90E-A9D628E96F2C} = {4452B7DD-941F-424E-82A3-5991EDECC764}
+		{F4EC62F2-BD83-463A-8A90-7B613990AF76} = {745D7CB4-B304-47AB-BDD5-1C923D9E31A8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3652E34D-EBCA-4CA6-9954-EA614C94C8BD}
