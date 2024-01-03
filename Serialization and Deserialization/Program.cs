@@ -31,6 +31,11 @@ namespace Serialization_and_Deserialization
             Console.WriteLine($"returnedGameDataBwr : Player Name = {returnedGameDataBwr.PlayerName}, Score = {returnedGameDataBwr.Score}");
         }
 
+        public static void <sdfs>hello()
+        {
+
+        }
+
         public static void SerializeToBinary_BinaryFormatter(object data)
         {
             using FileStream fs = new FileStream("GameData_bf.txt", FileMode.OpenOrCreate);

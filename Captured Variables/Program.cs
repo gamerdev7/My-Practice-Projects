@@ -3,7 +3,7 @@ using System.Text;
 namespace Captured_Variables
 {
     delegate void SomeAction();
-    
+
     class Program
     {
         static void Main(string[] args)
@@ -11,6 +11,7 @@ namespace Captured_Variables
             SomeAction instance = MakeDelegate();
             instance();
             instance();
+            Console.ReadLine();
         }
 
         static SomeAction MakeDelegate()
@@ -21,7 +22,9 @@ namespace Captured_Variables
                                         // and MakeDelegate() will be the method of that class. So thats why the anonymous method can access rng variable.
                                         // But the sb variable will not be included as the member of that class bcoz it is not being used in the delegate.
 
-            return delegate { Console.WriteLine(rng.Next());
+            return delegate
+            {
+                Console.WriteLine(rng.Next());
                 //Console.WriteLine(sb);
             };
 
